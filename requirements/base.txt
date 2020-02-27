@@ -11,3 +11,14 @@ django-rest-swagger
 
 # collection of custom extensions for the Django
 django-extensions
+
+# Logging
+git+https://github.com/Seedstars/django-rest-logger.git
+
+# database
+# psycopg2
+# if error run 
+# sudo apt-get install python3-psycopg2
+
+# connect Firebase database 
+pyrebase

@@ -9,6 +9,9 @@ from django.urls import path
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from django.views.generic import RedirectView
+from rest_framework_swagger.views import get_swagger_view
+
+schema_view = get_swagger_view(title='User API')
 
 urlpatterns = [
     # Examples:
@@ -20,6 +23,9 @@ urlpatterns = [
     url(r'^logout/$', auth_views.LogoutView.as_view(), name='core_logout'),
     path('', RedirectView.as_view(url='login/')),
 
+    url(r'^api/v1/accounts/', include('accounts.urls', namespace='accounts')),
+
     # enable the admin interface
     url(r'^admin/', admin.site.urls),
+    url(r'^api-docs/$', schema_view)
 ]

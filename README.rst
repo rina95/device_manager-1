@@ -181,9 +181,19 @@ Installed
 =========
 
 1. install postgresql
-    ./system_requirement.sh
+    - ./system_requirement.sh
+    - change user password
+    - if install psycopg2 error, run `sudo apt-get install python3-psycopg2`
 
 2. install packages
     pip3 install -r requirements/development.txt
 
-3. run migrate
+3. cp env.example .env
+    change value of ENV variable
+
+4. run migrate
+    - create database then run migrate 
+    - can use command: `python3 manage.py sqlcreate` to get some commands,
+    access to postgresql and run some above commands.
+5. connect to firebase
+    - if pyrebase get error when import, run command: ` pip3 install --upgrade google-auth-oauthlib`

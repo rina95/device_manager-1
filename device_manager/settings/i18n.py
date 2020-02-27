@@ -24,7 +24,7 @@ USE_TZ = True
 # This list of languages will be provided
 LANGUAGES = (
     ('en', _('English')),
-    ('vi', _('VietNam'))
+    ('vi', _('VietNamese'))
 )
 
 # Look for translations in these locations

@@ -4,8 +4,17 @@ from .development import *
 # turn off all debugging
 DEBUG = False
 
+PAGE_CACHE_SECONDS = 60
+
 # You will have to determine, which hostnames should be served by Django
 ALLOWED_HOSTS = []
+
+REST_FRAMEWORK['EXCEPTION_HANDLER'] = 'django_rest_logger.handlers.rest_exception_handler'  # NOQA (ignore all errors on this line)
+
+INSTALLED_APPS = INSTALLED_APPS + ( 
+    'gunicorn',
+    'dj-database-url',
+)
 
 # ##### SECURITY CONFIGURATION ############################
 
