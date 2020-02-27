@@ -1,0 +1,13 @@
+-r base.txt
+
+# coverage measures code coverage of Python programs
+# See http://coverage.readthedocs.io/en/latest/
+coverage
+
+# **tox** automates testing
+# See https://tox.readthedocs.io/en/latest/index.html
+tox
+
+# **flake8** is used to check for PEP8 compliance
+# See http://flake8.pycqa.org/en/latest/index.html
+flake8

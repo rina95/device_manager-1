@@ -1,0 +1,13 @@
+django
+
+# see https://pypi.org/project/environs/#features
+environs
+
+# django rest framwork for API and check API web view
+# see https://www.django-rest-framework.org/
+# https://django-rest-swagger.readthedocs.io/en/latest/
+djangorestframework
+django-rest-swagger
+
+# collection of custom extensions for the Django
+django-extensions
